@@ -1,0 +1,686 @@
+#fstrowh{
+  display: inline-block;
+}
+
+.hex {
+  vertical-align: top;
+  position: relative;
+  float: left;
+  width: 38px; 
+  height: 21.94px;
+  margin: 10.97px 0;
+  top:-11px;
+}
+.hex:before,
+.hex:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 19px solid transparent;
+  border-right: 19px solid transparent;
+}
+.hex:after {
+  top: 100%;
+  width: 0;
+}
+#hexagon1 {
+    background-color: #774bc6;
+  }
+
+#hexagon1:after {
+  border-top: 10.97px solid #774bc6;
+}
+
+#hexagon2 {
+ 
+  background-color: #7243c7;
+}
+
+#hexagon2:after {
+  border-top: 10.97px solid #7243c7;
+}
+
+#hexagon3 {
+  background-color: #7243c7;
+}
+
+#hexagon3:after {
+  border-top: 10.97px solid #7243c7;
+}
+
+#hexagon4 {
+  background-color: #663db3;
+}
+
+#hexagon4:after {
+  border-top: 10.97px solid #663db3;
+}
+
+#hexagon5 {
+  background-color: #592da6;
+}
+
+
+#hexagon5:after {
+  border-top: 10.97px solid #592da6;
+}
+
+#hexagon6 {
+  background-color: #5428a1;
+}
+
+#hexagon6:after {
+  border-top: 10.97px solid #5428a1;
+}
+
+#hexagon7 {
+  background-color: #50249f;
+}
+
+#hexagon7:after {
+  border-top: 10.97px solid #50249f;
+}
+
+#hexagon8 {
+  background-color: #4d209f;
+}
+
+
+#hexagon8:after {
+  border-top: 10.97px solid #4d209f;
+}
+
+#hexagon9 {
+  background-color: #4c1da1;
+}
+
+
+#hexagon9:after {
+  border-top: 10.97px solid #4c1da1;
+}
+
+#sndrowh {
+  display: block;
+  clear: both;
+  line-height: 42px;
+  box-sizing: border-box;
+}
+
+.hex2 {
+  float: left;
+  position: relative;
+  width: 38px; 
+  top:-30px;
+  left:-18px;
+  height: 21.94px;
+  margin: 10.97px 0;
+}
+.hex2:before,
+.hex2:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 19px solid transparent;
+  border-right: 19px solid transparent;
+}
+
+.hex2:before {
+  bottom: 100%;
+}
+
+.hex2:after {
+  top: 100%;
+  width: 0;
+}
+
+#hexagon10 {
+  background-color: #764ac6;
+}
+
+#hexagon10:before {
+  border-bottom: 10.97px solid #764ac6;
+}
+
+#hexagon10:after {
+ border-top: 10.97px solid #764ac6;
+}
+
+#clearec {
+  position: relative;
+  float: left;
+  top: -39px;
+  left: -58px;
+  width: 20px; 
+  height: 40px;
+  background-color: white;
+  margin: 10.97px 0;
+}
+
+#hexagon11 {
+  background-color: #764ac6;
+  left: -39px;
+}
+
+#hexagon11:before {
+  border-bottom: 10.97px solid #764ac6;
+}
+
+#hexagon11:after {
+  border-top: 10.97px solid #764ac6;
+}
+#hexagon12 {
+  background-color: #663db3;
+  left: -39px;
+}
+
+#hexagon12:before {
+  border-bottom: 10.97px solid #663db3;
+}
+
+#hexagon12:after {
+  border-top: 10.97px solid #663db3;
+}
+#hexagon13 {
+  background-color: #5f36ac;
+  left: -39px;
+}
+
+#hexagon13:before {
+  border-bottom: 10.97px solid #5f36ac;
+}
+
+#hexagon13:after {
+  border-top: 10.97px solid #5f36ac;
+}
+#hexagon14 {
+  background-color: #5e35ab;
+  left: -39px;
+}
+
+#hexagon14:before {
+  border-bottom: 10.97px solid #5e35ab;
+}
+
+#hexagon14:after {
+  border-top: 10.97px solid #5e35ab;
+}
+
+#hexagon15 {
+  background-color: #5428a1;
+  left: -39px;
+}
+
+#hexagon15:before {
+  border-bottom: 10.97px solid #5428a1;
+}
+
+#hexagon15:after {
+  border-top: 10.97px solid #5428a1;
+}
+
+#hexagon16 {
+  background-color: #5327a2;
+  left: -39px;
+}
+
+#hexagon16:before {
+ border-bottom: 10.97px solid #5327a2;
+}
+
+#hexagon16:after {
+ border-top: 10.97px solid #5327a2;
+}
+
+#hexagon17 {
+  background-color: #4d219d;
+  left: -39px;
+}
+
+#hexagon17:before {
+  border-bottom: 10.97px solid #4d219d;
+}
+
+#hexagon17:after {
+  border-top: 10.97px solid #4d219d;
+}
+
+#hexagon18 {
+  background-color: #4c1f9e;
+  left: -39px;
+}
+
+#hexagon18:before {
+  border-bottom: 10.97px solid #4c1f9e;
+}
+
+#hexagon18:after {
+  border-top: 10.97px solid #4c1f9e;
+}
+
+#hexagon19 {
+  background-color: #4e1ea5;
+  left: -39px;
+}
+
+#hexagon19:before {
+ border-bottom: 10.97px solid #4e1ea5;
+}
+
+#hexagon19:after {
+ border-top: 10.97px solid #4e1ea5;
+}
+
+#trdrowh {
+  display: block;
+  float: left;
+  clear: left;
+}
+
+.hex3{
+  float: left;
+  position: relative;
+  width: 38px; 
+  top:-60px;
+  left:0px;
+  height: 21.94px;
+  margin: 10.97px 0;
+}
+.hex3:before,
+.hex3:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 19px solid transparent;
+  border-right: 19px solid transparent;
+}
+
+.hex3:before {
+  bottom: 100%;
+}
+
+.hex3:after {
+  top: 100%;
+  width: 0;
+}
+
+#hexagon20 {
+  background-color: #784fc5;
+}
+
+#hexagon20:before {
+  border-bottom: 10.97px solid #784fc5;
+}
+
+#hexagon20:after {
+ border-top: 10.97px solid #784fc5;
+}
+#hexagon21 {
+  background-color: #653cb2;
+}
+
+#hexagon21:before {
+  border-bottom: 10.97px solid #653cb2;
+}
+
+#hexagon21:after {
+ border-top: 10.97px solid #653cb2;
+}
+#hexagon22 {
+  background-color: #5c33a9;
+}
+
+#hexagon22:before {
+  border-bottom: 10.97px solid #5c33a9;
+}
+
+#hexagon22:after {
+ border-top: 10.97px solid #5c33a9;
+}
+#hexagon23 {
+  background-color: #552ca4;
+}
+
+#hexagon23:before {
+  border-bottom: 10.97px solid #552ca4;
+}
+
+#hexagon23:after {
+ border-top: 10.97px solid #552ca4;
+}
+#hexagon24 {
+  background-color: #5327a2;
+}
+
+#hexagon24:before {
+  border-bottom: 10.97px solid #5327a2;
+}
+
+#hexagon24:after {
+ border-top: 10.97px solid #5327a2;
+}
+#hexagon25 {
+  background-color: #5125a0;
+}
+
+#hexagon25:before {
+  border-bottom: 10.97px solid #5125a0;
+}
+
+#hexagon25:after {
+ border-top: 10.97px solid #5125a0;
+}
+#hexagon26 {
+  background-color: #4e209d;
+}
+
+#hexagon26:before {
+  border-bottom: 10.97px solid #4e209d;
+}
+
+#hexagon26:after {
+ border-top: 10.97px solid #4e209d;
+}
+#hexagon27 {
+  background-color: #4e1fa1;
+}
+
+#hexagon27:before {
+  border-bottom: 10.97px solid #4e1fa1;
+}
+
+#hexagon27:after {
+ border-top: 10.97px solid #4e1fa1;
+}
+#hexagon28 {
+  background-color: #4d1ea2;
+}
+
+#hexagon28:before {
+  border-bottom: 10.97px solid #4d1ea2;
+}
+
+#hexagon28:after {
+ border-top: 10.97px solid #4d1ea2;
+}
+#hexagon29 {
+  background-color: #501f9f;
+}
+
+#hexagon29:before {
+  border-bottom: 10.97px solid #501f9f;
+}
+
+#hexagon29:after {
+ border-top: 10.97px solid #501f9f;
+}
+#frthrowh {
+  display: block;
+  float: left;
+  clear: left;
+}
+
+.hex4{
+  float: left;
+  position: relative;
+  width: 38px; 
+  top:-72px;
+  left:-18px;
+  height: 21.94px;
+  margin: 10.97px 0;
+}
+.hex4:before,
+.hex4:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 19px solid transparent;
+  border-right: 19px solid transparent;
+}
+
+.hex4:before {
+  bottom: 100%;
+}
+
+.hex4:after {
+  top: 100%;
+  width: 0;
+}
+
+#hexagon30 {
+  background-color: #6c40bc;
+}
+
+#hexagon30:before {
+  border-bottom: 10.97px solid #6c40bc;
+}
+
+#hexagon30:after {
+ border-top: 10.97px solid #6c40bc;
+}
+#clearec2 {
+  position: relative;
+  float: left;
+  width: 20px;
+  left: -58px; 
+  top:-82px;
+  height: 50px;
+  background-color: white;
+  margin: 10.97px 0;
+}
+
+#hexagon31 {
+  background-color: #633bae;
+  left:-39px;
+}
+
+#hexagon31:before {
+  border-bottom: 10.97px solid #633bae;
+}
+
+#hexagon31:after {
+ border-top: 10.97px solid #633bae;
+}
+
+#hexagon32 {
+  background-color: #5930a6;
+  left:-39px;
+}
+
+#hexagon32:before {
+  border-bottom: 10.97px solid #5930a6;
+}
+
+#hexagon32:after {
+ border-top: 10.97px solid #5930a6;
+}
+#hexagon33 {
+  background-color: #5529a4;
+  left:-39px;
+}
+
+#hexagon33:before {
+  border-bottom: 10.97px solid #5529a4;
+}
+
+#hexagon33:after {
+ border-top: 10.97px solid #5529a4;
+}
+#hexagon34 {
+  background-color: #5125a0;
+  left:-39px;
+}
+
+#hexagon34:before {
+  border-bottom: 10.97px solid #5125a0;
+}
+
+#hexagon34:after {
+ border-top: 10.97px solid #5125a0;
+}
+#hexagon35 {
+  background-color: #4e229d;
+  left:-39px;
+}
+
+#hexagon35:before {
+  border-bottom: 10.97px solid #4e229d;
+}
+
+#hexagon35:after {
+ border-top: 10.97px solid #4e229d;
+}
+#hexagon36 {
+  background-color: #4c209c;
+  left:-39px;
+}
+
+#hexagon36:before {
+  border-bottom: 10.97px solid #4c209c;
+}
+
+#hexagon36:after {
+ border-top: 10.97px solid #4c209c;
+}
+#hexagon37 {
+  background-color: #4c1f9e;
+  left:-39px;
+}
+
+#hexagon37:before {
+  border-bottom: 10.97px solid #4c1f9e;
+}
+
+#hexagon37:after {
+ border-top: 10.97px solid #4c1f9e;
+}
+#hexagon38 {
+  background-color: #4e1fa1;
+  left:-39px;
+}
+
+#hexagon38:before {
+  border-bottom: 10.97px solid #4e1fa1;
+}
+
+#hexagon38:after {
+ border-top: 10.97px solid #4e1fa1;
+}
+#hexagon39 {
+  background-color: #4e1ea5;
+  left:-39px;
+}
+
+#hexagon39:before {
+  border-bottom: 10.97px solid #4e1ea5;
+}
+
+#hexagon39:after {
+ border-top: 10.97px solid #4e1ea5;
+}
+
+#fithrowh {
+  display: block;
+  float: left;
+  clear: left;
+}
+
+.hex5{
+  float: left;
+  position: relative;
+  width: 38px; 
+  top:-111px;
+  height: 2px;
+  margin: 10.97px 0;
+}
+
+.hex4:before,
+.hex4:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 19px solid transparent;
+  border-right: 19px solid transparent;
+}
+.hex5:before {
+  bottom: 100%;
+}
+
+
+#hexagon40 {
+  background-color: #623aad;
+}
+
+#hexagon40:before {
+  border-bottom: 10.97px solid #623aad;
+}
+
+#hexagon41 {
+  background-color: #5b2fa8;
+}
+
+#hexagon41:before {
+  border-bottom: 10.97px solid #5b2fa8;
+}
+#hexagon42 {
+  background-color: #633bae;
+}
+
+#hexagon42:before {
+  border-bottom: 10.97px solid #633bae;
+}
+#hexagon43 {
+  background-color: #50249f;
+}
+
+#hexagon43:before {
+  border-bottom: 10.97px solid #50249f;
+}
+#hexagon44 {
+  background-color: #552ca4;
+}
+
+#hexagon44:before {
+  border-bottom: 10.97px solid #552ca4;
+}
+#hexagon45 {
+  background-color: #4b1f9b;
+}
+
+#hexagon45:before {
+  border-bottom: 10.97px solid #4b1f9b;
+}
+#hexagon46 {
+  background-color: #4c209c;
+}
+
+#hexagon46:before {
+  border-bottom: 10.97px solid #4c209c;
+}
+#hexagon47 {
+  background-color: #4d209f;
+}
+
+#hexagon47:before {
+  border-bottom: 10.97px solid #4d209f;
+}
+#hexagon48 {
+  background-color: #4c1fa0;
+}
+
+#hexagon48:before {
+  border-bottom: 10.97px solid #4c1fa0;
+}
+#hexagon49 {
+  background-color: #4e1ea6;
+}
+
+#hexagon49:before {
+  border-bottom: 10.97px solid #4e1ea6;
+}
+@media screen and (max-width: 400px) {
+  #hexagon8, #hexagon9, #hexagon16, #hexagon17, #hexagon18, 
+  #hexagon19, #hexagon26, #hexagon27, #hexagon28, #hexagon29,
+  #hexagon36, #hexagon37, #hexagon38, #hexagon39, #hexagon46,
+  #hexagon47, #hexagon48, #hexagon49 {
+    display: none;
+  }
