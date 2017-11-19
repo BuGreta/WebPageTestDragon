@@ -52,84 +52,91 @@ img {
 
 }
 
-nav {
-  position: absolute;
-  text-align: right;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    align-self: flex-end;
-    top: 5em;
-
-
-}
-
-nav ul li{
-    list-style: none;
-    text-decoration: none;
-    display: inline;
-    padding-right: 0.625em;
-
-}
-nav a {
-    color: white;
-    display: inline;
-    text-decoration: none;
-    font-size: 1.25em;
-}
-
-nav a:hover {
-    color:#ee4c73;
-}
-.dropbtn {
-    background-color: inherit;
-    color: white;
-    padding: 0.3em;
-    font-size: 1.25em;
-    border: none;
-    cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus,  nav a:hover{
-    color: #ee4c73;
-}
-
-.dropdown {
+nav{
+    margin-top:15px;
+    margin-right:30px;
     position: relative;
-    display: inline-block;
+    top: 70px;
 }
 
-/* Dropdown turinys */
-.dropdown-content {
-    display: none;
-    position: absolute;
+nav ul
+{
+    list-style:none;
+    position:relative;
+    float:right;
+    margin:0;
+    padding:0
+}
+
+nav ul a
+{
+    display:block;
+    color:white;
+    text-decoration:none;
+    font-size:1.25em;
+    padding:0 15px;
+}
+
+nav ul li
+{
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0
+}
+
+nav ul li a:hover
+{
+    color: #ee4c73
+}
+
+nav ul ul
+{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
     background-color: #ee4c73;
+    padding:0;
+    border-radius: 10px;
+}
+
+nav ul ul li
+{
+    float:none;
+    width:160px;
+}
+nav ul ul a
+{
     font-size: 1em;
-    text-align: left;
-    min-width: 10em;
-    border-radius: 0.625em;
-
-}
-
-/* Nuorodos dropdown'e */
-.dropdown-content a {
     color: black;
-    padding: 0.25em 1em;
     border-top:1px solid #be3b5b;
-    text-decoration: none;
-    display: block;
-}
-/*dropdown menu hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+    line-height:120%;
+    padding:10px 15px;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+nav ul ul a:hover{
     color: white;
     background-color: #ff6f93;
 }
+nav ul ul a:first-of-type {
+    border-top-style: none;
+}
 
-.show {display:block;}
+nav ul ul a:first-of-type:hover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+nav ul ul li a:last-of-type:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav ul li:hover > ul
+{
+    display:block
+}
 
 .arrow-up {
     content: "";
@@ -143,16 +150,6 @@ nav a:hover {
     top:-0.5em;
 }
 
-#myDropdown a:first-child{
-    border-top: none !important;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-#myDropdown a:nth-child(5){
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
 
 .icon {
     display: none;
@@ -265,7 +262,7 @@ textarea:placeholder-shown {
     list-style: none;
 }
 
-.footer ul li a:before{
+.footer ul li a::before{
     content: "•";
     padding:0.625em;
 }
@@ -286,8 +283,13 @@ textarea:placeholder-shown {
     .topnav a.icon {
         position: absolute;
         vertical-align: top;
-        display: inline-block;
+        left: -80px;
     }
+
+    .topnav ul li a {
+        display: block !important;
+    }
+
     #logo {
         height: 5em;
         width:13.5em;
@@ -306,11 +308,11 @@ textarea:placeholder-shown {
 
     .botomtext p {
         display: block !important;
-        width:90% !important;
+        min-width:90%;
 
     }
     .maintext {
-        width: 90% !important;
+        min-width: 90%;
     }
     .main{
         margin:auto;
@@ -328,14 +330,13 @@ textarea:placeholder-shown {
     form {
         height: 70%;
     }
-}
-@media screen and (max-width: 800px) {
+
     .topnav.responsive {position: absolute;}
     .topnav.responsive .icon {
         position: absolute;
         margin-right: 1.875em;
         clear: both;
-        display: inline-block;
+        display: block;
         float: none;
     }
     .topnav.responsive li:not(:first-child) {
