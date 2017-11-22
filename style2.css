@@ -54,9 +54,10 @@ img {
 
 nav{
     margin-top:15px;
-    margin-right:30px;
     position: relative;
-    top: 70px;
+    top: 2.5em;
+    left: -7.1em;
+
 }
 
 nav ul
@@ -73,8 +74,8 @@ nav ul a
     display:block;
     color:white;
     text-decoration:none;
-    font-size:1.25em;
-    padding:0 15px;
+    font-size:1.3em;
+    padding:0 20px;
 }
 
 nav ul li
@@ -150,10 +151,6 @@ nav ul li:hover > ul
     top:-0.5em;
 }
 
-
-.icon {
-    display: none;
-}
 .main {
     width: 100%;
     display: flex;
@@ -164,17 +161,20 @@ nav ul li:hover > ul
 }
 
 .maintext {
-    width: 55%;
+    width: 61%;
     color:#0c1127;
     border: 1px ridge #d2ccda;
     background-color: white;
     margin: 2.5em 0;
 }
-.maintext p,h1 {
+.maintext p {
     margin: 1.25em;
+    }
+.maintext h1 {
+    margin-left: 0.66em;
 }
 .sidebar {
-    width: 25%;
+    width: 22%;
     padding-left: 1.25em;
     text-align: center;
     color:#0c1127;
@@ -191,7 +191,7 @@ nav ul li:hover > ul
 form {
     color:#ee4c73;
     border:1px solid #ee4c73;
-    border-radius: 10px;
+    border-radius: 7px;
     padding-left: 0.625em;
     width: 100%;
     margin: auto;
@@ -208,8 +208,10 @@ form div {
 }
 
 textarea {
-    border-radius: 10px;
+    border-radius: 7px;
     border: 1px solid #d2ccda;
+    width: 95%;
+    height: 7em;
 }
 
 textarea:placeholder-shown {
@@ -222,7 +224,7 @@ textarea:placeholder-shown {
     width: 90%;
     font-size: 1.5em;
     height: 2em;
-    border-radius: 10px;
+    border-radius: 7px;
     margin: auto;
     position: relative;
     left: 0.5em;
@@ -252,9 +254,8 @@ textarea:placeholder-shown {
     padding: 0.625em;
     width: 100%;
     margin-top: 2.5em;
-    display: flex;
-    flex-direction:column;
-}
+    display: none;
+    }
 
 .footer ul {
     display: inline-flex;
@@ -279,26 +280,18 @@ textarea:placeholder-shown {
 
 
 @media screen and (max-width: 800px) {
-    .topnav li:not(:first-child) {display: none;}
-    .topnav a.icon {
-        position: absolute;
-        vertical-align: top;
-        left: -80px;
-    }
-
-    .topnav ul li a {
-        display: block !important;
-    }
 
     #logo {
         height: 5em;
-        width:13.5em;
-        top:1.25em !important;
+        width: 13.5em;
+        top: 1.25em !important;
         margin-left: 1.875em !important;
     }
+
     .sidebar {
-        margin:0.625em;
-        width:80% !important; }
+        margin: 0.625em;
+        width: 80% !important;
+    }
 
     .botomtext {
         display: flex !important;
@@ -308,14 +301,16 @@ textarea:placeholder-shown {
 
     .botomtext p {
         display: block !important;
-        min-width:90%;
+        min-width: 90%;
 
     }
+
     .maintext {
         min-width: 90%;
     }
-    .main{
-        margin:auto;
+
+    .main {
+        margin: auto;
         display: flex;
         flex-direction: column;
         padding-left: 3.125em !important;
@@ -324,46 +319,62 @@ textarea:placeholder-shown {
     .footer ul {
         display: block;
     }
+
     textarea {
-        width:94%;
+        width: 95%;
     }
+
     form {
-        height: 70%;
+        height: 80%;
     }
 
-    .topnav.responsive {position: absolute;}
-    .topnav.responsive .icon {
-        position: absolute;
-        margin-right: 1.875em;
-        clear: both;
-        display: block;
-        float: none;
-    }
-    .topnav.responsive li:not(:first-child) {
-        display: block;
-        text-align: left;
-        margin-right: 1.875em;
-        max-width: 11.25em;
-        border-bottom:1px solid #be3b5b;
-        background-color: #ee4c73;
+        #nav
+        {
+            position: absolute;
+            display: block !important;
+            left: 0.5em;
+            top: 4.5em;
+                    }
+        #nav > a
+        {   color: white;
+            text-decoration: none;
+        }
+        #nav:not( :target ) > a:first-of-type,
+        #nav:target > a:last-of-type
+        {
+            display: block;
+        }
+
+        /* first level */
+
+        #nav > ul
+        {
+            height: auto;
+            display: none;
+            position: absolute;
+
+
+        }
+        #nav:target > ul
+        {
+            display: block;
+        }
+        #nav > ul > li
+        {
+            width: 100%;
+            float: none;
+        }
+        #nav > ul > li >a {
+            color: #0c1127;
+        }
+        /* second level */
+
+        #nav li ul
+        {
+            position: relative;
+        }
     }
 
-    .topnav.responsive li:hover{
-        color: black;
-    }
-    .topnav.responsive li:not(:nth-child(2)) {
-        padding: 0.3em;
-    }
-    .topnav.responsive ul{
-        float: right;
-    }
-    .topnav.responsive li:nth-child(2) {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
 
-    .topnav.responsive li:nth-child(5) {
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-}
+
+
