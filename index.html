@@ -7,6 +7,7 @@
     <meta http-equiv="default-style" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="style2.css"> 
+		<script src="animate.js"></script>
 	</head>
 	<body>
 		<header>
@@ -16,13 +17,13 @@
 				alt="Testpage logo"
 				width= "270" 
 				height= "100">
-			<<nav id="nav" role="navigation">
-			<a href="#nav" title="Show navigation">Show menu</a>
-			<a href="#" title="Hide navigation">Hide menu</a>
-			<ul>
-                    <li><a href="#">Projects</a>
-                        <ul>
-                            <li><div class="arrow-up"></div></li>
+
+            <nav id="nav">
+                <div>
+                    <ul>
+                    <li><a href="javascript:void(0)">Projects</a>
+                        <ul class="dropdown">
+                            <li><span class="arrow-up"></span></li>
                             <li><a href="#">Link 1</a></li>
                             <li><a href="#">Link 2</a></li>
                             <li><a href="#">Link 3</a></li>
@@ -34,7 +35,13 @@
                     <li><a href="#">Testimonials</a></li>
                     <li><a href="#">Contacts</a></li>
                     </ul>
+            </div>
+            <div class="nav-bg">
+                <div class="side-nav"> <span></span> <span></span> <span></span> </div>
+                <a href="" class="title-mobile">Menu</a>
+            </div>
             </nav>
+
 		</header>
 		<div class="main">
 		<div class="maintext">
