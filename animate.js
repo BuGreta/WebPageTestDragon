@@ -1,8 +1,14 @@
 
+$(document).ready(function() {
+  $('.menu-trigger').click(function() {
+   $('nav ul').slideToggle(500);
+  });//end slide toggle
 
-$(document).ready(function(){
-  $('.side-nav').click(function(){
-    $('#nav').toggleClass('visible');
-    $('body').toggleClass('cover-bg');
-  });
-});
+  $(window).resize(function() {
+    if (  $(window).width() > 500 ) {
+      $('nav ul').removeAttr('style');
+    }
+  });//end resize
+});//end ready
+
+
